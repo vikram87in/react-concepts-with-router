@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@concepts/*": ["concepts/*"],
+      "@shared/*": ["shared/*"]
+    }
+  }
+}
