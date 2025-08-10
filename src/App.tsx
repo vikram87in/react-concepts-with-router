@@ -1,4 +1,5 @@
 import { Link, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import CustomHooks from './concepts/customHooks';
 import UseStateDemo from './concepts/useStateDemo';
 
 function Home() {
@@ -8,6 +9,9 @@ function Home() {
       <ul>
         <li>
           <Link to="/concepts/useStateDemo">useState Demo</Link>
+        </li>
+        <li>
+          <Link to="/concepts/custom-hooks">Custom Hooks</Link>
         </li>
         {/* Add more concepts here as you create them */}
       </ul>
@@ -24,6 +28,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/concepts/useStateDemo" element={<UseStateDemo />} />
+        <Route path="/concepts/custom-hooks" element={<CustomHooks />} />
         {/* Add more concept routes here */}
       </Routes>
     </Router>
